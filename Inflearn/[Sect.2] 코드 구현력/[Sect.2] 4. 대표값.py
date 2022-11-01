@@ -1,6 +1,6 @@
 import sys
 # import numpy as np
-sys.stdin = open('input.txt', 'rt')
+sys.stdin = open('../input.txt', 'rt')
 
 n = int(input())
 score = list(map(int, input().split()))

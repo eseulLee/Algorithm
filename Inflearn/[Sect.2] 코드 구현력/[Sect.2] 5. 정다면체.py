@@ -1,5 +1,5 @@
 import sys
-sys.stdin = open('input.txt', 'rt')
+sys.stdin = open('../input.txt', 'rt')
 
 N, M = map(int, input().split())
 cnt = [0] * (N+M+3) #여유있게 만드려고 +3
