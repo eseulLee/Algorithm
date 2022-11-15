@@ -19,12 +19,13 @@ def Count(capacity):
             s += x
     return cnt
 
+maxx = max(a)   # 가장 긴 곡의 용량 보다는 커야 함!
 lt = 1
 rt = sum(a)
 res = 0
 while lt <= rt:
     mid = (lt + rt) // 2
-    if Count(mid) <= m:
+    if mid >= maxx and Count(mid) <= m:
         res = mid
         rt = mid -1
     else:
